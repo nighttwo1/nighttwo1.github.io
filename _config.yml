@@ -62,7 +62,7 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "nigttwo1 on GitHub":
+  "nighttwo1 on GitHub":
     - "//github.com/nighttwo1"
 
 # Makes Aux links open in a new tab. Default is false
