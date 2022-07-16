@@ -50,6 +50,7 @@ Jira version을 배포해주는 action이라서 [jira-version-release-action](ht
 - (이번에도 그대로 작성하면 된다.)
     
     ```yaml
+    # action.yml
     name: "jira release action"
     description: "release jira version by updating version"
     
@@ -85,6 +86,7 @@ Jira version을 배포해주는 action이라서 [jira-version-release-action](ht
 - main의 경로를 `index.js`에서 `dist/index.js`로 변경해준다.
 
     ```yaml
+    # action.yml
     name: "jira release action"
     description: "release jira version by updating version"
     ... 
@@ -96,6 +98,7 @@ Jira version을 배포해주는 action이라서 [jira-version-release-action](ht
 - package json에 `"type":"module"`을 추가해준다.
     
     ```json
+    # package.json
     {
       "name": "jira-version-release-action",
       "version": "1.0.0",
@@ -188,7 +191,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: release jira version
-        uses: avikus-ai/jira-version-release-action@v0.0.1
+        uses: owner/jira-version-release-action@v0.0.1
         with:
           version_name: "github-jira-version-manage-test:v0.0.1-rc1"
           project_key: "***"
